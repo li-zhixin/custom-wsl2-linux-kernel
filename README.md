@@ -4,7 +4,9 @@ This repository is forked from [lgug2z/custom-wsl2-linux-kernel](https://github.
 
 This project uses GitHub Actions Workflows to produce and publish up-to-date builds of [WSL2-Linux-Kernel](https://github.com/microsoft/WSL2-Linux-Kernel).
 
-The `config-wsl` is based on the official Microsoft WSL2 kernel configuration, with [AppArmor](https://apparmor.net/) enabled as the default security module.
+The `config-wsl` is based on the official Microsoft WSL2 kernel configuration, with:
+- [AppArmor](https://apparmor.net/) enabled as the default security module
+- KVM (Kernel-based Virtual Machine) built-in for nested virtualization support
 
 The versioning scheme of this project matches the versioning scheme used by WSL2-Linux-Kernel.
 
