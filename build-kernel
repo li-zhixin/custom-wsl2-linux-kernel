@@ -5,7 +5,7 @@ clear
 
 ###########################################################################################################
 ##
-##  GitHub: https://github.com/slyfox1186/Windows-WSL2-Kernel-build-script
+##  GitHub: https://github.com/li-zhixin/custom-wsl2-linux-kernel
 ##
 ##  Supported Distros: Debian-based ( Debian, Ubuntu, etc. )
 ##
@@ -66,7 +66,7 @@ exit_fn()
     echo
     echo 'Make sure to star this repository to show your support!'
     echo
-    echo 'https://github.com/slyfox1186/Windows-WSL2-Kernel-build-script/'
+    echo 'https://github.com/li-zhixin/custom-wsl2-linux-kernel'
     echo
     exit 0
 }
@@ -78,7 +78,7 @@ fail_fn()
     echo
     echo 'Please create a support ticket'
     echo
-    echo 'https://github.com/slyfox1186/Windows-WSL2-Kernel-build-script/issues/'
+    echo 'https://github.com/li-zhixin/custom-wsl2-linux-kernel/issues'
     echo
     exit 1
 }
@@ -261,7 +261,7 @@ build_pkgs_fn()
 # install required apt packages
 build_pkgs_fn
 
-VERSION=6.6.75.1
+VERSION=6.6.87.1
 
 if build 'wsl2-linux-kernel' "linux-msft-wsl-${VERSION}"; then
     download "https://api.github.com/repos/microsoft/WSL2-Linux-Kernel/tarball/linux-msft-wsl-${VERSION}" "linux-msft-wsl-${VERSION}.tar.gz"
