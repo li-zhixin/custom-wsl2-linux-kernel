@@ -7,6 +7,7 @@ This project uses GitHub Actions Workflows to produce and publish up-to-date bui
 The `config-wsl` is based on the official Microsoft WSL2 kernel configuration, with:
 - [AppArmor](https://apparmor.net/) enabled as the default security module
 - KVM (Kernel-based Virtual Machine) built-in for nested virtualization support
+- [gvisor-tap-vsock](https://github.com/containers/gvisor-tap-vsock) support with TUN/TAP and VSOCK built-in
 
 The versioning scheme of this project matches the versioning scheme used by WSL2-Linux-Kernel.
 
